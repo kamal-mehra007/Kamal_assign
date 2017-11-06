@@ -1,16 +1,71 @@
-1) Configure the name and email 
+1) git config
 
-        git config --global user.name "Kamal"
-	git config --global user.email kamal.singh@weboniselab.com
+Sets configuration values for your user name, email file formats and more. 
 
-2) To create a new local repo
-	git init
+Example: git config --global user.name "Kamal Singh"
 
-3) List the files you've changed and those you still need to add or commit:
-	git status
+2) git init
 
-4) Delete the feature branch
-	git branch -d <branchname>
+Initializes a git repository – creates the initial ‘.git’ directory in a new or in an existing project.
 
-5) Fetch and merge changes on the remote server to your working directory:
-	git pull
+3) git clone
+
+Makes a Git repository copy from a remote source. Also adds the original location as a remote so you can fetch from it again and push to it if you have permissions. Example: git clone ssh link
+
+4) git add
+
+Adds files changes in your working directory to your index. Example: git add .
+
+5) git rm
+
+Removes files from your index and your working directory so they will not be tracked. Example: git rm filename
+
+6) git commit
+
+Takes all of the changes written in the index, creates a new commit object pointing to it and sets the branch to point to that new commit. 
+
+7) git status
+
+Shows you the status of files in the index versus the working directory. 
+
+8) git branch
+
+Lists existing branches. Creates a new branch if a branch name is provided. Example: git branch 
+
+9) git checkout
+
+Checks out a different branch – switches branches by updating the index, working tree, and HEAD to reflect the chosen branch. Example: git checkout newbranch
+
+10) git merge
+
+Merges one or more branches into your current branch and automatically creates a new commit if there are no conflicts. Example: git merge newbranchversion
+
+11) git reset
+
+Resets your index and working directory to the state of your last commit. Example: git reset --hard HEAD
+
+12) Tags a specific commit with a simple, human readable handle that never moves. Example: git tag -a v1.0 -m 'this is version 1.0 tag'
+
+13) git fetch
+
+Fetches all the objects from the remote repository that are not present in the local one. Example: git fetch origin
+
+14) git pull
+
+Fetches the files from the remote repository and merges it with your local one. This command is equal to the git fetch and the git merge sequence. Example: git pull origin
+
+15) git push
+
+Pushes all the modified local objects to the remote repository and advances its branches. Example: git push origin master
+
+16) git remote
+
+Shows all the remote versions of your repository. Example: git remote origin
+
+17) git log
+
+Shows a listing of commits on a branch including the corresponding details. Example: git log 
+ 
+18) git log --graph --pretty=oneline --abbrev-commit
+
+Shows tree based commit structure 
